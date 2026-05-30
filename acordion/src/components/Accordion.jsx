@@ -1,13 +1,19 @@
-import { useState } from "react";
-export default function Accordion({ qna }) {
-  const [show, setShow] = useState(false);
+export default function Accordion({
+  qna,
+  isOpen,
+  onToggle,
+}) {
   return (
     <div className="accordion">
       <h3>
-        {qna.question}{" "}
-        <span onClick={() => setShow(!show)}>{show ? "-" : "+"}</span>
+        {qna.question}
+
+        <button onClick={onToggle}>
+          {isOpen ? "-" : "+"}
+        </button>
       </h3>
-      {show ? <p>{qna.answer}</p> : ""}
+
+      {isOpen && <p>{qna.answer}</p>}
     </div>
   );
 }

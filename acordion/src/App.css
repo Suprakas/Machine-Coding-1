@@ -10,7 +10,7 @@
   position: relative;
 }
 
-span {
+button {
   position: absolute;
   right: 2rem;
   cursor: pointer;
