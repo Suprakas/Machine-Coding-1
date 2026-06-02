@@ -1,17 +1,23 @@
 import { useState, useEffect } from "react";
+
 export default function ProgressBar() {
   const [bar, setBar] = useState(10);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log("Clock is running");
-      setBar((prevbar) => {
-        if (prevbar >= 100) {
+      console.log("clock is running");
+      setBar((prevVal) => {
+        const nextVal = prevVal + 5;
+        if (nextVal >= 100) {
           clearInterval(interval);
+          return 100;
         }
-        return Math.min(prevbar + 5, 100);
+        return nextVal;
       });
-    }, 200);
+      return () => {
+        clearInterval(interval);
+      };
+    }, 250);
   }, []);
 
   return (
