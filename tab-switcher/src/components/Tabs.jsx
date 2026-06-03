@@ -1,6 +1,9 @@
 import { useState } from "react";
+
 export default function Tabs({ TabsData, onChange }) {
+    
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
+
   return (
     <div className="tabs">
       <div className="tabs__container">
