@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 
 export default function ToastNotifications() {
+    
   const [toasts, setToasts] = useState([]);
   const timersRef = useRef({});
 
