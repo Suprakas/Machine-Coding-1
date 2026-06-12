@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.post-container {
+  height: 170px;
+  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.pagination-container {
+  width: 550px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.page-btn {
+  background-color: black;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px;
+}
+
+.active {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
