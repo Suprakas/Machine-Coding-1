@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 170px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 5px;
+}
