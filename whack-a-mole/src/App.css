@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid black;
+  font-size: 3rem;
+  position: relative;
+}
+
+.hammer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
